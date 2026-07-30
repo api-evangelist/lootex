@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: searched
+source: https://blog.lootex.io
+name: Lootex Lifecycle & Deprecation
+description: >-
+  Lootex is winding down its consumer Web3 products after eight years of
+  operation and pivoting to full-stack AI/Web3 development partnerships and
+  open-source contributions. The consumer marketplace, Studio, and Biru social
+  platform are being sunset; user assets are non-custodial and remain in
+  users' own wallets.
+versioning:
+  policy: null
+  scheme: null
+  notes: >-
+    No formal API version scheme is published. Legacy REST endpoints were
+    documented under a Forge /v1 path; the Forge developer portal
+    (docs.forge.lootex.dev) is no longer resolving.
+status_page: null
+deprecations:
+- item: Smart Account (SA) features
+  status: suspended
+  sunset_date: '2025-08-27'
+  guidance: >-
+    Users were asked to withdraw assets and bind an external wallet before the
+    suspension date.
+  source: https://blog.lootex.io
+- item: Lootex Marketplace (marketplace, launchpad, staking, Beer Point system)
+  status: deprecated
+  sunset_date: '2026-04-04'
+  guidance: >-
+    Marketplace, launchpad, staking, and Beer Point features become
+    inaccessible after the sunset date. NFTs are non-custodial and remain in
+    users' own wallets.
+  source: https://blog.lootex.io
+- item: Biru community/social platform
+  status: deprecated
+  sunset_date: '2026-04-04'
+  guidance: Operations wind down on the sunset date.
+  source: https://blog.lootex.io
+- item: Lootex Studio (NFT creation/minting tool)
+  status: deprecated
+  sunset_date: '2026-04-04'
+  guidance: Consumer creation tooling discontinued as part of the product wind-down.
+  source: https://lootex.io
+sunset_header_support: unknown

@@ -1,0 +1,27 @@
+# Lootex
+
+> Lootex is a Web3 infrastructure and AI application development company with eight years in the blockchain space. It operated a multi-chain NFT marketplace, the Lootex Studio minting tool, and the Biru social platform, and now focuses on full-stack AI/Web3 development partnerships and open-source contributions. Its core marketplace infrastructure is published as open source (Apache-2.0).
+
+Notes for agents and integrators:
+- Consumer products (Lootex Marketplace, Lootex Studio, Biru) are being sunset on 2026-04-04. Smart Account features were suspended 2025-08-27. NFTs are non-custodial and remain in users' own wallets.
+- No public OpenAPI/Swagger definition is currently published. Legacy REST endpoints were documented under a Forge /v1 path; the Forge developer portal (docs.forge.lootex.dev) no longer resolves.
+- Authentication: Web3 wallet-signature login issuing JWT bearer tokens (marketplace), plus per-application API keys for the Forge minting/developer API.
+
+## Products
+- Lootex Marketplace: Multi-chain NFT marketplace (Seaport protocol, aggregator support) — deprecated 2026-04-04
+- Lootex Studio: NFT creation and minting tool — deprecated 2026-04-04
+- Biru: Community and social platform — deprecated 2026-04-04
+- Lootex Plus: API and SDK offering to mint, trade, and integrate NFTs into apps and games
+
+## Open Source
+- Lootex Core (Apache-2.0): NFT marketplace infrastructure — NestJS backend, Next.js frontend, blockchain event indexing, Web3 wallet auth with JWT: https://github.com/lootex-io/lootex-core
+- GitHub organization: https://github.com/lootex-io
+
+## Documentation
+- Developer & user documentation (GitBook): https://lootex.gitbook.io/docs
+- Postman collection: https://documenter.getpostman.com/view/8319383/TVK5bfvB
+- Blog: https://blog.lootex.io
+
+## Contact
+- Website: https://lootex.io
+- Partnerships: partnership@lootex.io

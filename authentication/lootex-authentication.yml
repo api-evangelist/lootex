@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/lootex-io/lootex-core
+name: Lootex Authentication
+description: >-
+  Authentication profile assembled from Lootex's open-source core and Forge
+  developer documentation. Two distinct surfaces existed: the marketplace
+  backend used Web3 wallet signature authentication issuing JWTs, while the
+  Forge minting/developer API used per-application API keys issued after
+  registration.
+schemes:
+- type: web3-signature
+  name: Wallet signature (SIWE-style)
+  description: >-
+    Users authenticate by signing a challenge with their Web3 wallet; the
+    backend verifies the signature and issues a JWT for subsequent requests.
+  in: null
+  source: https://github.com/lootex-io/lootex-core
+- type: http
+  scheme: bearer
+  bearer_format: JWT
+  name: JWT bearer
+  description: >-
+    Session JWT returned after wallet authentication, presented as a Bearer
+    token on marketplace API calls.
+  in: header
+  location: Authorization
+  source: https://github.com/lootex-io/lootex-core
+- type: apiKey
+  name: Forge API key
+  description: >-
+    The Forge developer/minting API required each client to register their
+    application and request an API key. The Forge developer portal
+    (docs.forge.lootex.dev) is no longer resolving.
+  in: header
+  location: null
+  source: https://github.com/Howard86/lootex-api
+notes: >-
+  No OpenAPI/Swagger definition is published, so securitySchemes could not be
+  derived from a spec. This profile is grounded in the public repositories and
+  developer documentation only.
